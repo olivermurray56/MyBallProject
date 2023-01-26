@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -6,13 +7,22 @@ import java.awt.event.KeyListener;
 public class BallPanel extends JPanel
 {
 
-    Ball one = new Ball(20, 20, 50 );
+    ArrayList<Ball> balls = new ArrayList<Ball>();
+
     int x = 80;
     int y = 20;
     int xSpeed = 3;
     int ySpeed = 3;
+
+  
     public BallPanel()
     {
+
+        for (int i= 0; i<20; i++)
+  {
+balls.add(new Ball((int)Math.random(30)+1), 10, 10);
+  
+  }
         setFocusable(true);
         addKeyListener(new KeyListener() {
             @Override
@@ -26,7 +36,7 @@ System.out.println(e.getKeyCode());
 int z = e.getKeyCode();
 if(z == 68)
 {
- one.moveRight();
+ 
 }
             }
 
@@ -43,7 +53,8 @@ if(z == 68)
     {
         super.paintComponent(g);
         //g.fillOval(x, y, 10, 10);
-        g.fillOval(one.getX(), one.getY(), one.getSize(), one.getSize());
+        //g.fillOval(one.getX(), one.getY(), one.getSize(), one.getSize());
+     // one.moveRight();
         x+= xSpeed;
         y+=ySpeed;
         if(x>=getWidth() || x<=0)
