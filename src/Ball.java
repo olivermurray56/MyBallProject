@@ -1,7 +1,8 @@
 
+import java.awt.*;
 public class Ball
 {
-    private int x, y, size;
+    private int x, y, size, count;
     public Ball(int x, int y, int size)
     {
         this.x=x;
@@ -21,8 +22,13 @@ public class Ball
         return size;
     }
 
-public void moveRight()
+public void move(int count)
 {
-   x = x + 2;
+   x = x + count;
 }
+public void draws(Graphics g)
+{
+    g.fillOval(x, x, y, y);
+}
+
 }

@@ -20,8 +20,8 @@ public class BallPanel extends JPanel
 
         for (int i= 0; i<20; i++)
   {
-balls.add(new Ball((int)(Math.random()*30+1), 10, 10));
-  
+int x = Math.random
+      balls.add(new Ball((int)(int x = Math.random()*400+1), x, (int)(Math.random()*50+1)));
   }
         setFocusable(true);
         addKeyListener(new KeyListener() {
@@ -55,7 +55,10 @@ if(z == 68)
         //g.fillOval(x, y, 10, 10);
         //g.fillOval(one.getX(), one.getY(), one.getSize(), one.getSize());
      // one.moveRight();
-        for
+        for (int i = 0; i<20; i++)
+        {
+        balls.get(i).draws(g);
+        }
         x+= xSpeed;
         y+=ySpeed;
         if(x>=getWidth() || x<=0)
