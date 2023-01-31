@@ -20,9 +20,15 @@ public class BallPanel extends JPanel
 
         for (int i= 0; i<20; i++)
   {
-int x = Math.random
-      balls.add(new Ball((int)(int x = Math.random()*400+1), x, (int)(Math.random()*50+1)));
+
+      balls.add(new Ball((int)(Math.random()*350+1) , (int)(Math.random()*350+1) , (int)(Math.random()*1+1)));
+      //tester
+      //  balls.add(new Ball(10, 10, 100));
   }
+
+
+
+
         setFocusable(true);
         addKeyListener(new KeyListener() {
             @Override
@@ -51,7 +57,7 @@ if(z == 68)
     @Override
     protected void paintComponent(Graphics g)
     {
-        super.paintComponent(g);
+        //super.paintComponent(g);
         //g.fillOval(x, y, 10, 10);
         //g.fillOval(one.getX(), one.getY(), one.getSize(), one.getSize());
      // one.moveRight();
