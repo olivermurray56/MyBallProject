@@ -21,7 +21,7 @@ public class BallPanel extends JPanel
         for (int i= 0; i<20; i++)
   {
 
-      balls.add(new Ball((int)(Math.random()*350+1) , (int)(Math.random()*350+1) , (int)(Math.random()*1+1)));
+      balls.add(new Ball((int)(Math.random()*350+1) , (int)(Math.random()*350+1) , (int)(Math.random()*30+1)));
       //tester
       //  balls.add(new Ball(10, 10, 100));
   }
@@ -64,6 +64,7 @@ if(z == 68)
         for (int i = 0; i<20; i++)
         {
         balls.get(i).draws(g);
+
         }
         x+= xSpeed;
         y+=ySpeed;

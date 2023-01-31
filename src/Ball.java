@@ -28,7 +28,7 @@ public void move(int count)
 }
 public void draws(Graphics g)
 {
-    g.fillOval(x, x, y, y);
+    g.fillOval(x, y, size, size);
 }
 
 }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="200cbae2-cc09-4b1a-a40f-f9ef1d71e38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BallPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BallPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,13 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674834495503</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="balls">
+      <created>1675180047762</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675180047762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="made comment in intelij" />
     <MESSAGE value="fixed loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed loop" />
+    <MESSAGE value="balls" />
+    <option name="LAST_COMMIT_MESSAGE" value="balls" />
   </component>
 </project>
